@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jpietcollegeapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jpcollegeappicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jpcollegeappicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JPIETCollegeApp">
+        <activity android:name=".FullImageView"></activity>
+        <activity android:name=".ebooks.PdfViewerActivity" />
+        <activity android:name=".ebooks.EbookActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

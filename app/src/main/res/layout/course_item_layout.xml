@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="@dimen/text_margin"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/course_icon"
+                android:layout_marginRight="@dimen/text_margin"
+
+                android:src="@drawable/ic_cs"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/bold"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/course_title"
+                android:text="Computer Science"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/tite_size" />
+
+
+
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/course_description"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/light"
+                android:text="@string/AboutCollege"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textSize="@dimen/text_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textColor"/>
+
+
+
+
+
+        
+      
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

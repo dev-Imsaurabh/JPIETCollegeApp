@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/purple_500"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                tools:ignore="Suspicious0dp">
+
+                <TextView
+                    android:id="@+id/teacherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shikha Sharma"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/title_size2"
+                    android:fontFamily="@string/regular">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/teacherEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shikha@gmail.com"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size"
+                    android:fontFamily="@string/regular">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/teacherPost"
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content"
+                    android:text="C programming"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@string/regular"
+                    android:textSize="@dimen/title_size2">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@color/purple_500">
+
+            </View>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                app:civ_border_color="@color/purple_500"
+                android:layout_marginRight="5dp"
+                app:civ_border_width="2dp"
+                android:id="@+id/teacherImage"
+                android:layout_height="120dp"
+                android:layout_weight="2"
+                android:src="@drawable/profile"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ebooks.EbookActivity">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/searchView"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ebookRecycler"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/searchView"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ebookRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ebookRecycler"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/shimmer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+            <include layout="@layout/shimmer_for_ebook"/>
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>
