@@ -9,13 +9,18 @@
 
 
 <p align="center">
+  • <a href="#important-steps">Important steps</a>
   • <a href="#about">About</a>
   • <a href="#features">Features</a>
   • <a href="#technology-used">Technology Used</a>
   
 </p>
 
+## Important steps
+
 College Admin app link :- https://github.com/dev-iamsaurabh/JPIETCollegeAdminApp 
+To use this project Add this project to your Firebase data base and download google-services.json file and pase it in the app.<br>
+Link for step by step adding of google-services.json file :-https://firebase.google.com/docs/android/setup<br>
 
 
 
