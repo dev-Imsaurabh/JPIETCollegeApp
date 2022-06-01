@@ -9,6 +9,12 @@
 
 
 <p align="center">
+    <a href="https://github.com/dev-iamsaurabh/JPIETCollegeApp/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License: MIT">
+    </a>
+</p>
+
+<p align="center">
   • <a href="#important-steps">Important steps</a>
   • <a href="#about">About</a>
   • <a href="#features">Features</a>
