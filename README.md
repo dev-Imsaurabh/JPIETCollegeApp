@@ -15,7 +15,7 @@
   
 </p>
 
-College Admin app link : -
+College Admin app link :- https://github.com/dev-iamsaurabh/JPIETCollegeAdminApp 
 
 
 
